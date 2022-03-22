@@ -1,0 +1,514 @@
+/* Global */
+
+/* Font */
+
+@font-face {
+  font-family: "Bariol Regular";
+  src: url(../font/bariol.woff);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: white;
+  font-family: "Bariol Regular";
+  scroll-behavior: smooth;
+  background-color: #1B1A20;
+}
+
+#accueil {
+  scroll-behavior: smooth;
+}
+
+div.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 9;
+}
+
+div.center p.title {
+  font-size: 20pt;
+  letter-spacing: 2px;
+}
+
+div.center p.paragraph {
+  margin-top: 5vh;
+  font-size: 15pt;
+}
+
+button.btnNext {
+  cursor: pointer;
+  padding: 1em;
+  border: 1px solid #06A6A4;
+  background-color: transparent;
+  color: white;
+  font-size: 12pt;
+  border-radius: 5px;
+  margin-top: 2vh;
+}
+
+button.btnNext:hover {
+  padding: 1em;
+  background-color: #06A6A4;
+  transition: .5s;
+}
+
+/* Menu */
+
+header.header-navbar {
+  width: 20vw;
+  height: 100vh;
+  background-color: #06A6A4;
+  position: fixed;
+  z-index: 10;
+}
+
+nav.navbar {
+  margin-top: 15vh;
+  text-align: center;
+}
+
+nav.navbar ul {
+  list-style: none;
+}
+
+nav.navbar ul li {
+  margin: 3em;
+}
+
+nav.navbar ul li a.nav-link {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 13pt;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  color: #D0D0D0;
+}
+
+nav.navbar ul li a.nav-link:hover {
+  color: #FFFFFF;
+  transition: .5s;
+}
+
+/* Parallax */
+div.parallax {
+  background-image: url("../img/background-accueil.jpg");
+  min-height: 100vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Container sections */
+
+div.containerSections {
+  margin-left: 22vw;
+}
+
+/* A propos de moi */
+section#a-propos-de-moi h1 {
+  line-height: 1;
+  padding-top: 5vh;
+  text-transform: uppercase;
+}
+
+hr.separator {
+  width: 75px;
+  border: 5px solid #06A6A4;
+  border-radius: 10px;
+  color: #06A6A4;
+  background-color: #06A6A4;
+  opacity: 1;
+  margin-bottom: 5%;
+  margin-top: 1%;
+}
+
+section#a-propos-de-moi article p {
+  text-align: justify;
+  font-size: 14pt;
+  color: #CCC;
+}
+
+section#a-propos-de-moi article.paragraph {
+  width: 35vw;
+  padding: 1em;
+  display: inline-block;
+  vertical-align: baseline;
+}
+
+section#a-propos-de-moi h1.center {
+  text-align: center;
+}
+
+div.qualites {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+div.qualites div.content {
+  width: 20vw;
+  height: auto;
+  text-align: center;
+  box-shadow: 1px 1px 12px #06A6A4;
+  border-radius: 10px;
+  margin: 2em;
+  padding: 1em;
+  background-color: #1B1A20;
+}
+
+div.qualites div.content img {
+  width: 50%;
+  height: auto;
+}
+
+/* Formation */
+
+div#formation {
+  padding-top: 5vh;
+}
+
+.timeline-container {
+  width: 80%;
+  padding: 50px 0;
+  margin: 50px auto;
+  position: relative;
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+}
+
+.timeline-container:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  margin-left: -1px;
+  width: 2px;
+  height: 100%;
+  background: white;
+  z-index: 1
+}
+
+.timeline-block {
+  width: -webkit-calc(50% + 8px);
+  width: -moz-calc(50% + 8px);
+  width: calc(50% + 8px);
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -moz-box-pack: justify;
+  justify-content: space-between;
+  clear: both;
+}
+
+.timeline-block-right {
+  float: right;
+}
+
+.timeline-block-left {
+  float: left;
+  direction: rtl
+}
+
+.marker {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  border: 2px solid white;
+  background: #06A6A4;
+  margin-top: 10px;
+  z-index: 9999;
+}
+
+.timeline-content {
+  width: 95%;
+  padding: 0 15px;
+  color: #666;
+}
+
+.timeline-content h3 {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-size: 25px;
+  font-weight: 500;
+}
+
+.timeline-content span {
+  font-size: 15px;
+  color: #a4a4a4;
+}
+
+.timeline-content p {
+  font-size: 14px;
+  line-height: 1.5em;
+  word-spacing: 1px;
+  color: white;
+}
+
+@media screen and (max-width: 768px) {
+
+  .timeline-container:before {
+    left: 8px;
+    width: 2px;
+  }
+
+  .timeline-block {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .timeline-block-right {
+    float: none;
+  }
+
+  .timeline-block-left {
+    float: none;
+    direction: ltr;
+  }
+
+}
+
+/* Compétences */
+
+div#competences {
+  padding-top: 5vh;
+}
+
+div#competences .container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+div#competences .container .block {
+  padding: 1em;
+}
+
+div#competences .container .block .competences {
+  padding: .5em 0em .5em 0em;
+}
+
+.competences h3 {
+  font-weight: 400;
+}
+
+.border {
+  width: 100%;
+  height: 1em;
+  background-color: white;
+  z-index: 2;
+  border-radius: 10px 0 10px 0;
+}
+
+.content {
+  height: 1em;
+  background-color: #06A6A4;
+  z-index: 3;
+  border-radius: 10px 0 10px 0;
+}
+
+div#competences .containerDipExp {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+div#competences .containerDipExp .diplome {
+  width: 20vw;
+  height: auto;
+  background-color: #06A6A4;
+  padding: 1em;
+  border-radius: 10px;
+  margin: 1em;
+}
+
+/* Expériences professionnelles */
+
+div#experiences-pro {
+  padding-top: 5vh;
+}
+
+div#experiences-pro .container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 30vw;
+  height: 30vw;
+}
+
+div#experiences-pro .container .experience {
+  flex-direction: row;
+  width: 30vw;
+  height: 30vw;
+  text-align: justify;
+  border-radius: 10px;
+  position: relative;
+}
+
+div#experiences-pro .container .experience img {
+  width: 32vw;
+  height: 100%;
+  border-radius: 10px;
+  opacity: .5;
+  position: absolute;
+  z-index: 0;
+}
+
+div#experiences-pro .container .experience a {
+  text-decoration: none;
+  color: white;
+}
+
+div#experiences-pro .container .experience .content {
+  width: 32vw;
+  height: 100%;
+  opacity: 1;
+  transition: .5s ease;
+  border-radius: 10px;
+  position: absolute;
+  background-color: rgba(6, 166, 164, .75);
+}
+
+div#experiences-pro .container .experience .content p, div#experiences-pro .container .experience .content h3 {
+  padding: 1em;
+}
+
+div#experiences-pro .container .experience .content p {
+  color: white;
+  font-size: 13pt;
+  text-align: justify;
+}
+
+div#experiences-pro .container .experience:hover img {
+  opacity: 1;
+}
+
+/* Veille technologique */
+
+div#veille-technologique {
+  padding-top: 10vh;
+}
+
+div#veille-technologique div.container {
+  width: 100%;
+  height: auto;
+}
+
+div#veille-technologique div.container div.article {
+  margin: 0 auto;
+  width: 70vw;
+  height: auto;
+}
+
+div#veille-technologique div.container div.article p {
+  font-size: 15pt;
+}
+
+div#veille-technologique div.container div.containerArticles {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin-top: 5vh;
+}
+
+div#veille-technologique div.container div.containerArticles .grid {
+  display: flex;
+  flex-direction: column;
+  margin: 1em;
+  flex-wrap: wrap;
+}
+
+div#veille-technologique div.container div.containerArticles div.article {
+  width: 50%;
+  height: auto;
+  margin-top: 2vh;
+  border: 1px solid white;
+  padding: 3em;
+  margin: 1em;
+  text-align: center;
+}
+
+div#veille-technologique div.container div.containerArticles div.article a {
+  text-decoration: none;
+  color: white;
+  font-size: 20pt;
+}
+
+/* Footer */
+
+footer {
+  margin-left: 20vw;
+  text-align: center;
+  padding: 1em;
+  background-color: #06A6A4;
+  color: white;
+}
+
+/* Responsive */
+
+@media screen and (max-width: 1200px) {
+
+  header {
+    display: none;
+  }
+
+  div.containerSections {
+    margin: 0;
+  }
+
+  section#a-propos-de-moi {
+    margin-left: 5vw;
+  }
+
+  section#a-propos-de-moi article.paragraph {
+    width: 80vw;
+    display: block;
+  }
+
+  div.qualites {
+    flex-direction: column;
+  }
+
+  div.qualites div.content {
+    width: 80vw;
+  }
+
+  .block {
+    width: 50%;
+    margin-top: 5vh;
+  }
+
+  div#competences .containerDipExp .diplome {
+    width: 100%;
+  }
+
+  div#competences .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  div#veille-technologique div.container div.containerArticles .grid {
+    flex-direction: row;
+  }
+
+  div#experiences-pro .container .experience .content {
+    display: none;
+  }
+
+  footer {
+    margin: 0;
+  }
+}
