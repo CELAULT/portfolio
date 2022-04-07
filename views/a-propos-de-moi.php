@@ -44,19 +44,19 @@ $age = dateDiff($now, $birthDate);
     <div class="content">
       <h2>Créatif</h2>
       <br><br>
-      <img src="/public/img/crea.png" alt="Créatif">
+      <img src="public/img/crea.png" alt="Créatif">
     </div>
 
     <div class="content">
       <h2>Énergique</h2>
       <br><br>
-      <img src="/public/img/ener.png" alt="Énergique">
+      <img src="public/img/ener.png" alt="Énergique">
     </div>
 
     <div class="content">
       <h2>Curieux</h2>
       <br><br>
-      <img src="/public/img/curi.png" alt="Curieux">
+      <img src="public/img/curi.png" alt="Curieux">
     </div>
   </div>
 </section>
