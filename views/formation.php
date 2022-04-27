@@ -1,5 +1,5 @@
 <div id="formation">
-  <h1 style="text-transform: uppercase;">Formation</h1>
+  <h1 style="text-transform: uppercase;">Formations</h1>
   <hr class="separator">
   <h2 style="text-align:center; text-transform: uppercase;">Mon parcours</h2>
 

@@ -136,10 +136,13 @@ section#a-propos-de-moi article p {
 }
 
 section#a-propos-de-moi article.paragraph {
-  width: 35vw;
-  padding: 1em;
+  padding: 2em;
   display: inline-block;
   vertical-align: baseline;
+}
+
+.alinea { 
+  text-indent: 50px; 
 }
 
 section#a-propos-de-moi h1.center {
