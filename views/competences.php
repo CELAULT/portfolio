@@ -24,7 +24,7 @@
             <h2>Framework</h2>
             <br>
             <div class="competences">
-                <h3>CSS : Bootstrap</h3>
+                <h3>CSS : Bootstrap, Symfony, Twig</h3>
             </div>
         </div>
 

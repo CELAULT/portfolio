@@ -1,5 +1,5 @@
 <footer style="display:flex; flex-direction: row; justify-content: space-around; align-item: center;">
-  <p>Célien RENAULT<br>
+  <p>Copyright © Célien RENAULT<br>
     <a href="mailto:renaultcelienr@gmail.com">renaultcelienr@gmail.com</a>
   </p>
   <div>

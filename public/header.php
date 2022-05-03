@@ -1,8 +1,7 @@
 <header class="header-navbar" id="header-navbar">
   <nav class="navbar" id="navbar">
     <div>
-      <a target="_blank" href="https://www.instagram.com/celiendrawings"><img style="width: 5vw;" src="public/img/insta.png" alt="Instagram"></a>
-      <a target="_blank" href="https://github.com/CELAULT"><img style="width: 5vw;" src="public/img/github.png" alt="GitHub"></a>
+      <a><img style="width: 10vw;" src="public/img/logo.png" alt="Instagram"></a>
     </div>
     <div class="containerMenu">
       <ul>
