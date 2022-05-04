@@ -9,8 +9,9 @@
         <li><a class="nav-link" href="#a-propos-de-moi">A propos de moi</a></li>
         <li><a class="nav-link" href="#formation">Formations</a></li>
         <li><a class="nav-link" href="#competences">Compétences</a></li>
-        <li><a class="nav-link" href="#experiences-pro">Expériences professionnelles</a></li>
-        <li><a class="nav-link" href="#veille-technologique">Veille technologique</a></li>
+        <li><a class="nav-link" href="#projets">Projets</a></li>
+        <li><a class="nav-link" href="#experiences-pro">Expériences Professionnelles</a></li>
+        <li><a class="nav-link" href="#veille-technologique">Veille Technologique</a></li>
       </ul>
     </div>
   </nav>
