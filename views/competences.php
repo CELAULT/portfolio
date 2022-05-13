@@ -131,5 +131,17 @@
                 <h3>Certification Mooc de l'ANSSI</h3>
             </div>
         </a>
+
+        <a href="https://www.root-me.org/Celien-RENAULT?lang=fr#f8ef0e2dfb6818126c6b7b7642368778" style="text-decoration: none; color: white;">
+            <div class="diplome">
+                <h3>Profil sur ROOTME</h3>
+            </div>
+        </a>
+
+        <a href="https://awsacademy.instructure.com/courses/16246/grades" style="text-decoration: none; color: white;">
+            <div class="diplome">
+                <h3>Parcours sur AWS</h3>
+            </div>
+        </a>
     </div>
 </div>

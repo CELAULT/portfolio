@@ -119,7 +119,7 @@ section#a-propos-de-moi h1 {
 }
 
 hr.separator {
-  width: 1400px;
+  width: 1000px;
   border: 5px solid #06A6A4;
   border-radius: 50px;
   color: #06A6A4;
@@ -450,13 +450,12 @@ div#veille-technologique div.container div.containerArticles .grid {
 }
 
 div#veille-technologique div.container div.containerArticles div.article {
-  width: 50%;
+  width: 75%;
   height: auto;
   margin-top: 2vh;
   border: 1px solid white;
   padding: 3em;
   margin: 1em;
-  text-align: center;
 }
 
 div#veille-technologique div.container div.containerArticles div.article a {

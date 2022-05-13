@@ -1,0 +1,203 @@
+html,
+body {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+#cucure {
+    border-radius: 4px 4px 1px 1px;
+    left: 130px;
+    bottom: 20px;
+    height: 16px;
+    width: 46px;
+    background-image: url("images/lingo.png");
+    position: absolute;
+}
+
+div#feedback {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    top: 0;
+    bottom: 0;
+    margin-top: auto;
+    margin-bottom: auto;
+    display: table;
+}
+
+.NoCursor {
+    cursor: auto;
+    width: 100%;
+    height: 100%;
+}
+
+.ChoixDifficulté {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    top: 0;
+    bottom: 0;
+    margin-top: auto;
+    margin-bottom: auto;
+    display: table;
+}
+
+button:hover {
+    background-color: rgb(255, 80, 0);
+}
+
+button {
+    font-size: 13px;
+    font-family: "Open Sans", "Segoe UI", "Helvetica neue", Meiryo, sans-serif;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 10px;
+    border: none;
+    padding: 5px;
+    border-radius: 4px;
+    background-color: rgb(255, 204, 0);
+    border-bottom: solid 3px rgb(255, 80, 0);
+    cursor: pointer;
+    transition: all .25s ease;
+}
+
+span {
+    font-family: "Open Sans", "Segoe UI", "Helvetica neue", Meiryo, sans-serif;
+    font-size: 17px;
+    border-bottom: solid 2px;
+    display: table;
+    margin: 0 auto;
+}
+
+.start {
+    width: 606px;
+    height: 432px;
+    position: absolute;
+    background: rgba(0, 0, 0, .7);
+    z-index: 999 !important;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.Fenetre {
+    opacity: 0;
+    animation: FadeIn 1.5s linear;
+    -webkit-animation: FadeIn 1.5s linear;
+    animation-fill-mode: forwards;
+    background: white;
+    width: 75%;
+    height: 50%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: auto;
+    margin-left: auto;
+    position: absolute;
+    cursor: auto;
+    box-shadow: rgba(0, 0, 0, .7) 0px 2px 6px;
+}
+
+.FadeOut {
+    animation: FadeOut 1s linear;
+    -webkit-animation: FadeOut 1s linear;
+    animation-fill-mode: forwards;
+}
+
+#point {
+    color: black;
+    font-size: 25px;
+    background: white;
+    width: 604px;
+    text-align: center;
+    margin: auto;
+}
+
+.bloc {
+    border-radius: 3px;
+    height: 16px;
+    width: 46px;
+    background-image: url("images/brique_n.png");
+    position: absolute;
+}
+
+.bloc2 {
+    border-radius: 3px;
+    height: 16px;
+    width: 46px;
+    position: absolute;
+    background-image: url("images/brique_use.png");
+}
+
+#babale {
+    border-radius: 5px;
+    left: 100px;
+    top: 150px;
+    height: 16px;
+    width: 16px;
+    background-image: url("images/bille.png");
+    position: absolute;
+}
+
+#ctn {
+    position: relative;
+    height: 400px;
+    width: 600px;
+    background: gray;
+    background-image: url("images/ciel.png");
+    margin: auto;
+    border: solid 2px white;
+}
+
+@-webkit-keyframes FadeOut {
+    0% {
+        opacity: 1;
+    }
+
+    80% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes FadeOut {
+    0% {
+        opacity: 1;
+    }
+
+    80% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@-webkit-keyframes FadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes FadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
